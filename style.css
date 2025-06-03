@@ -1,24 +1,24 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    background-color: #f0f8ff; /* Bright light blue */
-    color: #222;
+    background-color: #111; /* deep black background */
+    color: #f2f2f2;
     line-height: 1.6;
     padding-bottom: 50px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 body.dark-mode {
-    background-color: #1a1a1a;
+    background-color: #000;
     color: #eee;
 }
 
 header {
-    background-color: #00aaff; /* Bright blue */
+    background-color: #b30000; /* strong red */
     color: white;
     padding: 20px 0;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
 }
 
 header img {
@@ -36,25 +36,25 @@ main {
 }
 
 section {
-    background-color: #ffffff; /* White for brightness */
+    background-color: #1a1a1a; /* dark gray-black */
     padding: 25px;
     margin-bottom: 25px;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(255, 0, 0, 0.2); /* red shadow */
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 body.dark-mode section {
-    background-color: #2a2a2a;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    background-color: #121212;
+    box-shadow: 0 2px 6px rgba(255, 0, 0, 0.3);
 }
 
 h1, h2, h3 {
-    color: #0077cc; /* Bright sky blue */
+    color: #ff3333; /* bright red */
 }
 
 body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 {
-    color: #42a5f5;
+    color: #ff6666;
 }
 
 .skill-buttons {
@@ -66,7 +66,7 @@ body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 {
 }
 
 .skill-btn {
-    background-color: #00c853; /* Vivid green */
+    background-color: #e60000; /* vivid red */
     color: white;
     padding: 10px 20px;
     border: none;
@@ -77,7 +77,7 @@ body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 {
 }
 
 .skill-btn:hover {
-    background-color: #00b342;
+    background-color: #cc0000;
     transform: translateY(-2px);
 }
 
@@ -85,22 +85,23 @@ body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 {
     margin-top: 15px;
     font-style: italic;
     min-height: 20px;
+    color: #ccc;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #00aaff;
+    background-color: #b30000;
     color: white;
     position: relative;
     bottom: 0;
     width: 100%;
-    box-shadow: 0 -2px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
 }
 
 #themeToggle {
-    background-color: #ffc400; /* Bright yellow */
-    color: #333;
+    background-color: #ff4d4d;
+    color: #000;
     padding: 8px 15px;
     border: none;
     border-radius: 5px;
@@ -110,37 +111,38 @@ footer {
 }
 
 #themeToggle:hover {
-    background-color: #ffab00;
+    background-color: #e60000;
+    color: white;
 }
 
 .project-card {
-    border: 1px solid #ddd;
+    border: 1px solid #333;
     padding: 15px;
     margin-bottom: 15px;
     border-radius: 8px;
-    background-color: #fdfdfd;
+    background-color: #1e1e1e;
     text-align: left;
     transition: transform 0.2s ease, background-color 0.3s ease;
-    color: #333;
+    color: #eee;
 }
 
 body.dark-mode .project-card {
-    background-color: #2f2f2f;
+    background-color: #2a2a2a;
     border-color: #444;
 }
 
 .project-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(255,0,0,0.15);
 }
 
 .project-card h3 {
-    color: #0077cc;
+    color: #ff3333;
     margin-top: 0;
 }
 
 body.dark-mode .project-card h3 {
-    color: #42a5f5;
+    color: #ff6666;
 }
 
 /* --- Responsive Enhancements --- */
