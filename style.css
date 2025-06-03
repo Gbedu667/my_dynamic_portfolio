@@ -1,155 +1,172 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    background-color: #111; /* deep black background */
-    color: #f2f2f2;
+    background-color: #D9D9D9; /* Warm gray for light mode background */
+    color: #1A1A1A; /* Charcoal for text */
     line-height: 1.6;
-    padding-bottom: 50px;
+    padding-bottom: 5rem;
     transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: clamp(16px, 2.5vw, 18px);
 }
 
 body.dark-mode {
-    background-color: #000;
-    color: #eee;
+    background-color: #1C2526; /* Deep navy for dark mode */
+    color: #E6E6E6; /* Light gray for dark mode text */
 }
 
 header {
-    background-color: #b30000; /* strong red */
-    color: white;
-    padding: 20px 0;
+    background-color: #7B0828; /* Deep red for header */
+    color: #FFFFFF;
+    padding: 2rem 0;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.3);
 }
 
 header img {
     border-radius: 50%;
-    border: 4px solid white;
-    margin-bottom: 10px;
-    max-width: 120px;
+    border: 0.4rem solid #FFFFFF;
+    margin-bottom: 1rem;
+    max-width: 15vw;
     height: auto;
 }
 
 main {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 0 20px;
+    max-width: 90rem;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    width: 90%;
 }
 
 section {
-    background-color: #1a1a1a; /* dark gray-black */
-    padding: 25px;
-    margin-bottom: 25px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(255, 0, 0, 0.2); /* red shadow */
+    background-color: #F5F5F5; /* Off-white for section backgrounds */
+    padding: 2.5rem;
+    margin-bottom: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 body.dark-mode section {
-    background-color: #121212;
-    box-shadow: 0 2px 6px rgba(255, 0, 0, 0.3);
+    background-color: #2D2D2D; /* Dark slate for dark mode sections */
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
 }
 
 h1, h2, h3 {
-    color: #ff3333; /* bright red */
+    color: #1C2526; /* Deep navy for headings */
 }
 
 body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 {
-    color: #ff6666;
+    color: #D9D9D9; /* Warm gray for dark mode headings */
 }
 
 .skill-buttons {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
+    gap: 1rem;
+    margin-top: 2rem;
 }
 
 .skill-btn {
-    background-color: #e60000; /* vivid red */
-    color: white;
-    padding: 10px 20px;
+    background-color: #D94F04; /* Burnt orange for buttons */
+    color: #FFFFFF;
+    padding: 1rem 2rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     cursor: pointer;
-    font-size: 1em;
+    font-size: clamp(14px, 2vw, 16px);
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .skill-btn:hover {
-    background-color: #cc0000;
-    transform: translateY(-2px);
+    background-color: #B84303; /* Darker orange on hover */
+    transform: translateY(-0.2rem);
 }
 
 #skill-description {
-    margin-top: 15px;
+    margin-top: 1.5rem;
     font-style: italic;
-    min-height: 20px;
-    color: #ccc;
+    min-height: 2rem;
+    color: #1A1A1A; /* Charcoal for description text */
+}
+
+body.dark-mode #skill-description {
+    color: #E6E6E6; /* Light gray for dark mode */
 }
 
 footer {
     text-align: center;
-    padding: 20px;
-    background-color: #b30000;
-    color: white;
+    padding: 2rem;
+    background-color: #7B0828; /* Deep red to match header */
+    color: #FFFFFF;
     position: relative;
     bottom: 0;
     width: 100%;
-    box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
+    box-shadow: 0 -0.2rem 0.8rem rgba(0, 0, 0, 0.3);
 }
 
 #themeToggle {
-    background-color: #ff4d4d;
-    color: #000;
-    padding: 8px 15px;
+    background-color: #1C2526; /* Deep navy for theme toggle */
+    color: #FFFFFF;
+    padding: 0.8rem 1.5rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 1rem;
     transition: background-color 0.3s ease;
 }
 
 #themeToggle:hover {
-    background-color: #e60000;
-    color: white;
+    background-color: #151B1E; /* Slightly darker navy on hover */
 }
 
 .project-card {
-    border: 1px solid #333;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    background-color: #1e1e1e;
+    border: 1px solid #1C2526; /* Deep navy border */
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.8rem;
+    background-color: #F5F5F5; /* Off-white for project cards */
     text-align: left;
     transition: transform 0.2s ease, background-color 0.3s ease;
-    color: #eee;
 }
 
 body.dark-mode .project-card {
-    background-color: #2a2a2a;
-    border-color: #444;
+    background-color: #2D2D2D; /* Dark slate for dark mode */
+    border-color: #3A3A3A;
 }
 
 .project-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 8px rgba(255,0,0,0.15);
+    transform: translateY(-0.3rem);
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.25);
 }
 
 .project-card h3 {
-    color: #ff3333;
+    color: #7B0828; /* Deep red for project card headings */
     margin-top: 0;
 }
 
 body.dark-mode .project-card h3 {
-    color: #ff6666;
+    color: #D9D9D9; /* Warm gray for dark mode */
 }
 
-/* --- Responsive Enhancements --- */
+/* Responsive Design: Media Queries */
 @media (max-width: 768px) {
-    header, main, section, footer {
-        padding-left: 15px;
-        padding-right: 15px;
+    header {
+        padding: 1.5rem 0;
+    }
+
+    header img {
+        max-width: 20vw;
+    }
+
+    main {
+        padding: 0 1.5rem;
+        width: 95%;
+    }
+
+    section {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 
     .skill-buttons {
@@ -157,14 +174,42 @@ body.dark-mode .project-card h3 {
         align-items: center;
     }
 
-    header img {
-        max-width: 80px;
+    .skill-btn {
+        width: 100%;
+        max-width: 20rem;
+    }
+
+    footer {
+        padding: 1.5rem;
     }
 }
 
 @media (max-width: 480px) {
+    body {
+        font-size: clamp(14px, 2.2vw, 16px);
+    }
+
+    header {
+        padding: 1rem 0;
+    }
+
+    header img {
+        max-width: 25vw;
+    }
+
+    main {
+        padding: 0 1rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
     .skill-btn {
-        width: 100%;
-        text-align: center;
+        padding: 0.8rem 1.5rem;
+    }
+
+    #themeToggle {
+        padding: 0.6rem 1.2rem;
     }
 }
